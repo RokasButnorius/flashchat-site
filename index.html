@@ -2,33 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Private Chat</title>
+    <title>Private Chat | Download</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="app-container">
-        <!-- Sidebar -->
-        <aside class="sidebar">
-            <div class="server-name">Family Chat</div>
-            <div class="channel"># general</div>
-            <div class="channel active"># random</div>
-        </aside>
+    <nav>
+        <h1>PRIVATE CHAT</h1>
+    </nav>
 
-        <!-- Main Chat Area -->
-        <main class="chat-area">
-            <header class="chat-header"># random</header>
-            <div class="messages" id="chatOutput">
-                <div class="message"><b>Uncle Bob:</b> Yo, what's good?</div>
-                <div class="message"><b>You:</b> Just coding this app, bro!</div>
+    <main>
+        <section class="hero">
+            <h2>Secure. Private. For Us.</h2>
+            <p>The easiest way to stay connected without the tracking.</p>
+        </section>
+
+        <section class="downloads">
+            <h3>Get the App</h3>
+            <div class="btn-group">
+                <a href="/downloads/chat-app.apk" class="btn">Android (APK)</a>
+                <a href="/downloads/chat-app.exe" class="btn">Windows (EXE)</a>
+                <a href="http://your-tailscale-address:5091" class="btn-primary">Open Web App</a>
             </div>
-            <form id="chatForm" class="input-area">
-                <input type="text" id="userInput" placeholder="Message #random..." required>
-                <button type="submit">Send</button>
-            </form>
-        </main>
-    </div>
-    <script src="script.js"></script>
+        </section>
+    </main>
 </body>
 </html>
-
