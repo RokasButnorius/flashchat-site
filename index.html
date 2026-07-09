@@ -2,30 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!-- This line makes it mobile friendly -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Private Chat | Downloads</title>
+    <title>Private Chat | Alpha</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="version-tag">v0.1 PRERELEASE</div>
+    
     <nav>
         <h1>PRIVATE CHAT</h1>
+        <p>Secure. Private. Decentralized.</p>
     </nav>
 
     <main>
-        <section class="hero">
-            <h2>Secure. Private. For Us.</h2>
-            <p>The easiest way to stay connected without the tracking.</p>
-        </section>
-
         <section class="downloads">
-            <h3>Get the App</h3>
-            <!-- No changes needed here, the CSS handles the stacking -->
+            <h3>Download</h3>
             <div class="btn-group">
-                <a href="/downloads/chat-app.apk" class="btn">Android (APK)</a>
-                <a href="/downloads/chat-app.exe" class="btn">Windows (EXE)</a>
+                <a href="/downloads/app.apk" class="btn">Android (APK)</a>
+                <a href="/downloads/app.exe" class="btn">Windows (EXE)</a>
                 <a href="http://your-tailscale-address:5091" class="btn-primary">Open Web App</a>
             </div>
+        </section>
+
+        <section class="tutorial">
+            <h3>Quick Start Guide</h3>
+            <ol>
+                <li>Install <a href="https://tailscale.com/" target="_blank">Tailscale</a> and log in.</li>
+                <li>Connect to our family network.</li>
+                <li>Click the "Open Web App" button above or launch the installed app.</li>
+            </ol>
         </section>
     </main>
 </body>
