@@ -1,19 +1,14 @@
-* { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: sans-serif; height: 100vh; background-color: #36393f; color: #dcddde; }
+body { background-color: #202225; color: #fff; font-family: sans-serif; text-align: center; padding: 50px; }
+h1 { color: #5865f2; margin-bottom: 50px; }
+.hero { margin-bottom: 50px; }
 
-.app-container { display: flex; height: 100vh; }
-
-.sidebar { width: 240px; background-color: #2f3136; padding: 20px; }
-.channel { padding: 10px; cursor: pointer; border-radius: 5px; }
-.channel.active { background-color: #42464d; color: #fff; }
-
-.chat-area { flex: 1; display: flex; flex-direction: column; background-color: #36393f; }
-.chat-header { padding: 15px; border-bottom: 1px solid #202225; font-weight: bold; }
-
-.messages { flex: 1; padding: 20px; overflow-y: auto; }
-.message { margin-bottom: 15px; }
-
-.input-area { padding: 20px; display: flex; gap: 10px; }
-input { flex: 1; padding: 12px; background: #40444b; border: none; border-radius: 5px; color: white; }
-button { padding: 10px 20px; background: #5865f2; border: none; color: white; border-radius: 5px; cursor: pointer; }
-
+.btn-group { display: flex; justify-content: center; gap: 20px; }
+.btn { 
+    padding: 15px 30px; background: #40444b; color: white; 
+    text-decoration: none; border-radius: 5px; font-weight: bold;
+}
+.btn-primary { 
+    padding: 15px 30px; background: #5865f2; color: white; 
+    text-decoration: none; border-radius: 5px; font-weight: bold;
+}
+.btn:hover, .btn-primary:hover { opacity: 0.9; }
