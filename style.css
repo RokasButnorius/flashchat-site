@@ -1,14 +1,17 @@
-body { background-color: #202225; color: #fff; font-family: sans-serif; text-align: center; padding: 50px; }
-h1 { color: #5865f2; margin-bottom: 50px; }
-.hero { margin-bottom: 50px; }
+body { background-color: #202225; color: #fff; font-family: sans-serif; text-align: center; padding: 20px; }
+h1 { color: #5865f2; margin-bottom: 30px; }
+.hero { margin-bottom: 40px; }
 
-.btn-group { display: flex; justify-content: center; gap: 20px; }
-.btn { 
-    padding: 15px 30px; background: #40444b; color: white; 
-    text-decoration: none; border-radius: 5px; font-weight: bold;
+.btn-group { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
+.btn, .btn-primary { 
+    padding: 15px 25px; text-decoration: none; border-radius: 5px; 
+    font-weight: bold; display: block; width: 200px; margin: 5px auto;
 }
-.btn-primary { 
-    padding: 15px 30px; background: #5865f2; color: white; 
-    text-decoration: none; border-radius: 5px; font-weight: bold;
+.btn { background: #40444b; color: white; }
+.btn-primary { background: #5865f2; color: white; }
+
+/* THIS IS THE MOBILE MAGIC */
+@media (max-width: 600px) {
+    .btn-group { flex-direction: column; }
+    .btn, .btn-primary { width: 90%; }
 }
-.btn:hover, .btn-primary:hover { opacity: 0.9; }
