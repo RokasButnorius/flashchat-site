@@ -3,35 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Private Chat | Alpha</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Private Chat Access</title>
+    <style>
+        body { font-family: sans-serif; background: #121212; color: #eee; padding: 20px; line-height: 1.6; }
+        .tutorial { max-width: 600px; margin: 0 auto; }
+        .step-box { background: #202020; padding: 20px; margin-bottom: 20px; border-radius: 8px; border-left: 4px solid #ff4d4d; }
+        h3 { color: #ff4d4d; }
+        h4 { margin-top: 0; }
+        .btn { display: inline-block; background: #444; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 10px; }
+        .btn-primary { display: inline-block; background: #ff4d4d; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; margin-top: 10px; }
+    </style>
 </head>
 <body>
-    <div class="version-tag">v0.1 PRERELEASE</div>
+
+<section class="tutorial">
+    <h3>Quick Start Guide</h3>
     
-    <nav>
-        <h1>PRIVATE CHAT</h1>
-        <p>Secure. Private. Decentralized.</p>
-    </nav>
+    <div class="step-box">
+        <h4>1. Get Connected</h4>
+        <p>Install the <b>Tailscale</b> app from your store. Sign in once—that's all you need to do.</p>
+        <a href="https://tailscale.com/download" class="btn">Download Tailscale</a>
+    </div>
 
-    <main>
-        <section class="downloads">
-            <h3>Download</h3>
-            <div class="btn-group">
-                <a href="/downloads/app.apk" class="btn">Android (APK)</a>
-                <a href="/downloads/app.exe" class="btn">Windows (EXE)</a>
-                <a href="http://your-tailscale-address:5091" class="btn-primary">Open Web App</a>
-            </div>
-        </section>
+    <div class="step-box">
+        <h4>2. Activate Private Link</h4>
+        <p>Open the Tailscale app and tap the switch to <b>ON</b> when you want to chat. When you're done, just tap it <b>OFF</b>.</p>
+        <p><small style="color: #888;">This keeps our chat private and encrypted from Big Tech.</small></p>
+    </div>
 
-        <section class="tutorial">
-            <h3>Quick Start Guide</h3>
-            <ol>
-                <li>Install <a href="https://tailscale.com/" target="_blank">Tailscale</a> and log in.</li>
-                <li>Connect to our family network.</li>
-                <li>Click the "Open Web App" button above or launch the installed app.</li>
-            </ol>
-        </section>
-    </main>
+    <div class="step-box">
+        <h4>3. Open Chat</h4>
+        <p>Once Tailscale is "ON," tap the button below to join the secure chat.</p>
+        <a href="http://YOUR_SERVER_IP:5091" class="btn-primary">Launch Private Chat</a>
+    </div>
+</section>
+
 </body>
 </html>
